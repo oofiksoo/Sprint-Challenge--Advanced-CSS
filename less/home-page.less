@@ -11,7 +11,7 @@
     p {
       padding:0 15px;
     }
-    .lrgimg {
+    .LrgImg img {
       width:100%;
 
     }
@@ -22,6 +22,17 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .sky{
+      @media @phone {display:none;}
+    }
+    .launch{
+      @media @phone {display:none;}
+    }
+    .blast{
+        @media @phone {width:100%;
+        }
+    
+    }
 
     img {
       width: 28%;
@@ -49,7 +60,8 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone {flex-direction:column-reverse;}
+    
     .walk-text {
       width: 50%;
 
@@ -69,7 +81,7 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      @media @phone {width:100%;}
       img {
         width: 100%;
         height: auto;
