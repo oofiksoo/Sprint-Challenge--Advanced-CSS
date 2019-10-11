@@ -30,6 +30,7 @@
     }
     .blast{
         @media @phone {width:100%;
+          padding:2%;
         }
     
     }
@@ -60,11 +61,13 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-    @media @phone {flex-direction:column-reverse;}
+    @media @phone {flex-direction:column-reverse;
+      width:100%;
+    padding: 10px;}
     
     .walk-text {
       width: 50%;
-
+      @media @phone {width:100%;}
       h3 {
         margin-bottom: 10px;
       }
@@ -81,12 +84,14 @@
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      @media @phone {width:100%;}
+      @media @phone {width:100%;
+          margin-left:0%;
+        margin-bottom:2%;}
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
+        }
     }
   }
 }// home
