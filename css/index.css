@@ -166,6 +166,9 @@ p {
   flex-direction: column;
   justify-content: center;
   padding: 1%;
+  position: fixed;
+  background-color: rgba(0, 0, 255, 0.3);
+  width: 100%;
 }
 .NavContainer .navbar {
   display: flex;
@@ -196,6 +199,14 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.home {
+  padding-top: 10%;
+}
+@media (max-width: 500px) {
+  .home {
+    padding-top: 15%;
+  }
 }
 .home .intro h2 {
   padding: 15px;
