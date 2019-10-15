@@ -1,7 +1,8 @@
 // Home Content
 
 .home {
-
+padding-top:10%;
+@media @phone {padding-top:15%;}
   .intro {
 
     h2 {
@@ -11,6 +12,11 @@
     p {
       padding:0 15px;
     }
+    .LrgImg img {
+      width:100%;
+      &:Hover{.AnimationHover();}
+
+    }
   
   }
 
@@ -18,12 +24,26 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    .sky{
+      @media @phone {display:none;}
+    }
+    .launch{
+      @media @phone {display:none;}
+    }
+    .blast{
+        @media @phone {width:100%;
+          padding:2%;
+        }
+    
+    }
 
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      @media @phone {margin-bottom:10px;}
+      &:Hover{.AnimationHover();}
     }
   }
 
@@ -32,6 +52,7 @@
 
     h3 {
       margin-top: 11px;
+      @media @phone {margin-top:5px;}
     }
 
     p {
@@ -45,12 +66,17 @@
     padding: 50px 60px;
     display: flex;
     justify-content: center;
-
+    @media @phone {flex-direction:column-reverse;
+      width:100%;
+    padding: 10px;
+    margin-top:20px;}
+    
     .walk-text {
       width: 50%;
-
+      @media @phone {width:100%;}
       h3 {
         margin-bottom: 10px;
+        @media @phone {margin-top:10px;}
       }
 
       p {
@@ -58,18 +84,22 @@
       }
 
       .btn {
+        .SignUpBtn(@btn-bg-color, white);
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+      &:Hover{.AnimationHover();}
+      @media @phone {width:100%;
+          margin-left:0%;
+        margin-bottom:2%;}
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
-      }
+        }
     }
   }
 }// home

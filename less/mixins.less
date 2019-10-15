@@ -1,1 +1,43 @@
 // Mixins Here
+.flex(){
+    display:flex;
+    align-items: center;
+}
+.color(){
+    color:black;
+}
+.SignUpBtn(@color, @textcolor){
+    border:1px solid @color;
+    border-radius:5px;
+    background-color:@color;
+    color:@textcolor;
+    width:25%;
+    height:10%;
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items:center;
+    margin:2% 0;
+    font-size:1.4rem;
+    &:hover {
+        Background-color:@textcolor;
+        color:@color;}
+    
+    @media @phone {
+        width:100%;
+        height:45px;}
+    }
+
+    @keyframes HoverAnimation {
+        from {
+            border:1px solid black;
+        }
+        to {
+            border:5px dotted green;
+        }
+    }
+    .AnimationHover(){
+        animation-name: HoverAnimation;
+        animation-duration: 2s;
+    }
